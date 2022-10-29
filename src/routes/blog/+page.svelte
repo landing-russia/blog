@@ -1,3 +1,16 @@
-<h1 class="text-5xl font-bold">Blog</h1>
+<script>
+  export let data
+</script>
 
-<a href="/">Home</a>
+<ul>
+  {#each data.posts as post}
+    <li>
+      <h4>
+        <a href={post.path}>
+          {post.meta.title}
+        </a>
+      </h4>
+      Published {post.meta.date}
+    </li>
+  {/each}
+</ul>

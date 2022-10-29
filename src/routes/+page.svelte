@@ -3,7 +3,7 @@
   import { Icon, ArrowRight, Filter } from "svelte-hero-icons"
 </script>
 
-<div class="p-6">
+<div class="p-4">
   <h1 class="mb-2 text-4xl font-bold">Welcome to SvelteKit</h1>
   <p>
     Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation
@@ -11,17 +11,6 @@
   <Button size="xl" class="my-4" shadow="cyan" gradient color="cyanToBlue"
     >Welcome</Button
   >
-
-  <div>
-    <Button
-      size="xl"
-      class="my-4"
-      shadow="cyan"
-      gradient
-      color="cyanToBlue"
-      on:click={() => (hidden1 = false)}>Show drawer</Button
-    >
-  </div>
 
   <Icon src={Filter} solid size="32" />
 

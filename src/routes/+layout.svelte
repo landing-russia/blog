@@ -1,111 +1,33 @@
 <script>
+  import "@fontsource/inter/100.css"
+  import "@fontsource/inter/200.css"
+  import "@fontsource/inter/300.css"
+  import "@fontsource/inter/400.css"
+  import "@fontsource/inter/500.css"
+  import "@fontsource/inter/600.css"
+  import "@fontsource/inter/700.css"
+  import "@fontsource/inter/800.css"
+  import "@fontsource/inter/900.css"
+  import "@fontsource/bitter/100.css"
+  import "@fontsource/bitter/200.css"
+  import "@fontsource/bitter/300.css"
+  import "@fontsource/bitter/400.css"
+  import "@fontsource/bitter/500.css"
+  import "@fontsource/bitter/600.css"
+  import "@fontsource/bitter/700.css"
+  import "@fontsource/bitter/800.css"
+  import "@fontsource/bitter/900.css"
   import "../app.css"
-  import { DarkMode, Drawer, Button, CloseButton } from "flowbite-svelte"
-  import { Icon, Menu } from "svelte-hero-icons"
+  import "../prism-one-dark.css"
 
-  import { sineIn } from "svelte/easing"
-  let hidden1 = true
-  let transitionParams = {
-    x: -320,
-    duration: 200,
-    easing: sineIn,
-  }
-
-  let btnClass =
-    "text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-full p-2"
+  import Header from "../lib/components/Header.svelte"
+  import Footer from "../lib/components/Footer.svelte"
 </script>
 
-<header class="lg:pl-4 pr-4 py-4 flex items-end justify-between shadow-xl">
-  <a
-    href="/"
-    class="text-gray-700 hover:bg-gray-100 px-3 py-1.5 leading-none rounded-xl text-2xl font-bold"
-    >Конспект</a
-  >
-  <nav class="flex items-center space-x-4">
-    <button
-      class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-full p-2"
-      on:click={() => (hidden1 = false)}
-      ><Icon src={Menu} class="text-gray-700 dark:text-gray-400" solid size="22" /></button
-    >
-    <DarkMode {btnClass} />
-    <ul class="flex items-center space-x-4">
-      <li>
-        <a
-          href="/about"
-          class="text-gray-700 font-semibold px-3 py-1 leading-none hover:bg-gray-100 rounded-xl"
-          >About</a
-        >
-      </li>
-      <li>
-        <a
-          href="/contact"
-          class="text-gray-700 font-semibold px-3 py-1 leading-none hover:bg-gray-100 rounded-xl"
-          >Contact</a
-        >
-      </li>
-      <li>
-        <a
-          href="/blog"
-          class="text-gray-700 font-semibold px-3 py-1 leading-none hover:bg-gray-100 rounded-xl"
-          >Blog</a
-        >
-      </li>
-    </ul>
-  </nav>
-</header>
-<Drawer
-  transitionType="fly"
-  {transitionParams}
-  bind:hidden={hidden1}
-  id="sidebar1"
->
-  <div class="flex items-center">
-    <h5
-      id="drawer-label"
-      class="inline-flex items-center mb-4 text-base font-semibold text-gray-500 dark:text-gray-400"
-    >
-      <svg
-        class="w-5 h-5 mr-2"
-        aria-hidden="true"
-        fill="currentColor"
-        viewBox="0 0 20 20"
-        xmlns="http://www.w3.org/2000/svg"
-        ><path
-          fill-rule="evenodd"
-          d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
-          clip-rule="evenodd"
-        /></svg
-      >Info
-    </h5>
-    <CloseButton
-      on:click={() => (hidden1 = true)}
-      class="mb-4 dark:text-white"
-    />
-  </div>
-  <p class="mb-6 text-sm text-gray-500 dark:text-gray-400">
-    Supercharge your hiring by taking advantage of our <a
-      href="/"
-      class="text-blue-600 underline dark:text-blue-500 hover:no-underline"
-      >limited-time sale</a
-    > for Flowbite Docs + Job Board. Unlimited access to over 190K top-ranked candidates
-    and the #1 design job board.
-  </p>
-  <div class="grid grid-cols-2 gap-4">
-    <Button color="light" href="/">Learn more</Button>
-    <Button href="/"
-      >Get access <svg
-        class="w-4 h-4 ml-1"
-        aria-hidden="true"
-        fill="currentColor"
-        viewBox="0 0 20 20"
-        xmlns="http://www.w3.org/2000/svg"
-        ><path
-          fill-rule="evenodd"
-          d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-          clip-rule="evenodd"
-        /></svg
-      ></Button
-    >
-  </div>
-</Drawer>
-<slot />
+<Header />
+<div class="w-full">
+  <slot />
+</div>
+<div class="mt-auto">
+  <Footer />
+</div>
