@@ -11,7 +11,7 @@
   }
 
   let btnClass =
-    "text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-full p-2"
+    "text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-full p-2"
 </script>
 
 <header
@@ -19,7 +19,7 @@
 >
   <a
     href="/"
-    class="text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 px-3 py-1.5 leading-none rounded-xl text-2xl font-extrabold font-serif"
+    class="text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 px-3 py-1.5 leading-none rounded-xl text-2xl font-extrabold font-serif"
     >Конспект</a
   >
   <nav class="flex items-center space-x-4">
@@ -28,27 +28,27 @@
       <li>
         <a
           href="/about"
-          class="text-gray-700 dark:text-gray-200 font-semibold px-3 py-2 leading-none hover:bg-gray-100 dark:hover:bg-gray-800 rounded-xl"
+          class="text-gray-700 dark:text-gray-200 font-semibold px-3 py-2 leading-none hover:bg-gray-100 dark:hover:bg-gray-700 rounded-xl"
           >About</a
         >
       </li>
       <li>
         <a
           href="/contact"
-          class="text-gray-700 dark:text-gray-200 font-semibold px-3 py-2 leading-none hover:bg-gray-100 dark:hover:bg-gray-800 rounded-xl"
+          class="text-gray-700 dark:text-gray-200 font-semibold px-3 py-2 leading-none hover:bg-gray-100 dark:hover:bg-gray-700 rounded-xl"
           >Contact</a
         >
       </li>
       <li>
         <a
           href="/blog"
-          class="text-gray-700 dark:text-gray-200 font-semibold px-3 py-2 leading-none hover:bg-gray-100 dark:hover:bg-gray-800 rounded-xl"
+          class="text-gray-700 dark:text-gray-200 font-semibold px-3 py-2 leading-none hover:bg-gray-100 dark:hover:bg-gray-700 rounded-xl"
           >Blog</a
         >
       </li>
     </ul>
     <button
-      class="lg:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-full p-2"
+      class="lg:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-full p-2"
       on:click={() => (hidden1 = false)}
       ><Icon
         src={Menu}
