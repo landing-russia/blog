@@ -1,5 +1,5 @@
 <div
-  class="max-w-7xl mx-auto p-4"
+  class="max-w-7xl mx-auto"
 >
   <slot />
 </div>

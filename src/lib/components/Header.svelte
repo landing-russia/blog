@@ -1,6 +1,7 @@
 <script>
   import { DarkMode, Drawer, Button, CloseButton } from "flowbite-svelte"
   import { Icon, Menu } from "svelte-hero-icons"
+  import { navItems } from "$lib/config"
 
   import { sineIn } from "svelte/easing"
   let hidden1 = true
@@ -25,27 +26,15 @@
   <nav class="flex items-center space-x-4">
     <DarkMode {btnClass} />
     <ul class="hidden lg:flex items-center space-x-4">
-      <li>
-        <a
-          href="/about"
-          class="text-gray-700 dark:text-gray-200 font-semibold px-3 py-2 leading-none hover:bg-gray-100 dark:hover:bg-gray-700 rounded-xl"
-          >About</a
-        >
-      </li>
-      <li>
-        <a
-          href="/contact"
-          class="text-gray-700 dark:text-gray-200 font-semibold px-3 py-2 leading-none hover:bg-gray-100 dark:hover:bg-gray-700 rounded-xl"
-          >Contact</a
-        >
-      </li>
-      <li>
-        <a
-          href="/blog"
-          class="text-gray-700 dark:text-gray-200 font-semibold px-3 py-2 leading-none hover:bg-gray-100 dark:hover:bg-gray-700 rounded-xl"
-          >Blog</a
-        >
-      </li>
+      {#each navItems as page}
+        <li>
+          <a
+            href={page.route}
+            class="text-gray-700 dark:text-gray-200 font-semibold px-3 py-2 leading-none hover:bg-gray-100 dark:hover:bg-gray-700 rounded-xl"
+            >{page.title}</a
+          >
+        </li>
+      {/each}
     </ul>
     <button
       class="lg:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-full p-2"
