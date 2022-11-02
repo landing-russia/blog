@@ -19,7 +19,7 @@
         })}
       </div>
       <h3
-        class="line-clamp-2 font-serif leading-5 font-bold text-base text-gray-600 dark:text-gray-300 dark:group-hover:text-gray-100 transition duration-150"
+        class="line-clamp-2 font-serif leading-5 font-bold text-xl text-gray-600 dark:text-gray-300 dark:group-hover:text-gray-100 transition duration-150"
       >
         {post.meta.title}
       </h3>
