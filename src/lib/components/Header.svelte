@@ -41,7 +41,7 @@
       on:click={() => (hidden1 = false)}
       ><Icon
         src={Menu}
-        class="text-gray-700 dark:text-gray-400"
+        class="text-gray-500 dark:text-gray-400"
         solid
         size="22"
       /></button
@@ -74,7 +74,7 @@
     </h5>
     <CloseButton
       on:click={() => (hidden1 = true)}
-      class="mb-4 dark:text-white"
+      class="mb-4 text-gray-500 dark:text-gray-400"
     />
   </div>
   <p class="mb-6 text-sm text-gray-500 dark:text-gray-400">
