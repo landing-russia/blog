@@ -8,7 +8,7 @@
   {#each data.posts as post}
     <a
       href={post.path}
-      class="group p-4 bg-white shadow hover:shadow-lg dark:bg-gray-900 border border-gray-200 hover:border-gray-300 dark:border-gray-700 dark:hover:border-gray-500 rounded-xl transition duration-150"
+      class="group p-4 bg-white shadow hover:shadow-lg dark:bg-gray-900 border border-gray-200 hover:border-gray-300 dark:border-gray-700 dark:hover:border-gray-500 rounded-md transition duration-150"
     >
       <div class="text-xs text-gray-400 dark:text-gray-500 mb-2">
         {new Date(post.meta.date).toLocaleDateString("ru", {
