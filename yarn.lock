@@ -100,10 +100,10 @@
     "esbuild" "^0.15.7"
     "set-cookie-parser" "^2.4.8"
 
-"@sveltejs/adapter-static@^1.0.0-next.46":
-  "integrity" "sha512-8BlgwD3fjAbtUUgvREjrq5okZSXMTU/Qla99RhTqGaFo+uOrUzguKrXvjeaD4GzxQZdQUNyTX9hKT0V7tX6TMw=="
-  "resolved" "https://registry.npmjs.org/@sveltejs/adapter-static/-/adapter-static-1.0.0-next.46.tgz"
-  "version" "1.0.0-next.46"
+"@sveltejs/adapter-static@^1.0.0-next.48":
+  "integrity" "sha512-Z5Z+QZOav6D0KDeU3ReksGERJg/sX1k5OKWWXyQ11OwGErEEwSXHYRUyjaBmZEPeGzpVVGwwMUK8YWJlG/MKeA=="
+  "resolved" "https://registry.npmjs.org/@sveltejs/adapter-static/-/adapter-static-1.0.0-next.48.tgz"
+  "version" "1.0.0-next.48"
 
 "@sveltejs/adapter-vercel@1.0.0-next.80":
   "integrity" "sha512-a1ibKgN5RsNw6HPzhNKrPuEndgYRXCYlGIioVzfKpt/tEr4RuV5o/bST2FBgjCIWCqajKhWg1QLZmN2DZfPy6Q=="
@@ -142,10 +142,10 @@
     "magic-string" "^0.26.7"
     "svelte-hmr" "^0.15.0"
 
-"@tailwindcss/typography@^0.5.7":
-  "integrity" "sha512-JTTSTrgZfp6Ki4svhPA4mkd9nmQ/j9EfE7SbHJ1cLtthKkpW2OxsFXzSmxbhYbEkfNIyAyhle5p4SYyKRbz/jg=="
-  "resolved" "https://registry.npmjs.org/@tailwindcss/typography/-/typography-0.5.7.tgz"
-  "version" "0.5.7"
+"@tailwindcss/typography@^0.5.8":
+  "integrity" "sha512-xGQEp8KXN8Sd8m6R4xYmwxghmswrd0cPnNI2Lc6fmrC3OojysTBJJGSIVwPV56q4t6THFUK3HJ0EaWwpglSxWw=="
+  "resolved" "https://registry.npmjs.org/@tailwindcss/typography/-/typography-0.5.8.tgz"
+  "version" "0.5.8"
   dependencies:
     "lodash.castarray" "^4.4.0"
     "lodash.isplainobject" "^4.0.6"
@@ -157,7 +157,7 @@
   "resolved" "https://registry.npmjs.org/@types/cookie/-/cookie-0.5.1.tgz"
   "version" "0.5.1"
 
-"@types/node@*":
+"@types/node@*", "@types/node@>= 14":
   "integrity" "sha512-3JRwhbjI+cHLAkUorhf8RnqUbFXajvzX4q6fMn5JwkgtuwfYtRQYI3u4V92vI6NJuTsbBQWWh3RZjFsuevyMGQ=="
   "resolved" "https://registry.npmjs.org/@types/node/-/node-18.11.5.tgz"
   "version" "18.11.5"
@@ -548,10 +548,10 @@
   dependencies:
     "to-regex-range" "^5.0.1"
 
-"flowbite-svelte@^0.27.11":
-  "integrity" "sha512-Pw4KQlVFkFamc3qWRFSOc7CIadTZV1CMF3pQIKdiAQrRAmOf2PI6EdSnj4rfE5lnNzSOvfAOUdMHGBEKXPkEIQ=="
-  "resolved" "https://registry.npmjs.org/flowbite-svelte/-/flowbite-svelte-0.27.11.tgz"
-  "version" "0.27.11"
+"flowbite-svelte@^0.27.14":
+  "integrity" "sha512-MqPKZmD14hVIo5Q0wQEovs9xue0eBwqpIGLFCdnaDLY9GVa+6U051shQ2+PT5Fisr4Tpyev9GCe0clJa0BdBqw=="
+  "resolved" "https://registry.npmjs.org/flowbite-svelte/-/flowbite-svelte-0.27.14.tgz"
+  "version" "0.27.14"
   dependencies:
     "@popperjs/core" "^2.11.6"
     "classnames" "^2.3.2"
@@ -999,7 +999,7 @@
   "resolved" "https://registry.npmjs.org/postcss-value-parser/-/postcss-value-parser-4.2.0.tgz"
   "version" "4.2.0"
 
-"postcss@^7 || ^8", "postcss@^8.0.0", "postcss@^8.1.0", "postcss@^8.2.14", "postcss@^8.3.3", "postcss@^8.4.17", "postcss@^8.4.18", "postcss@>=8.0.9":
+"postcss@^7 || ^8", "postcss@^8.0.0", "postcss@^8.1.0", "postcss@^8.2.14", "postcss@^8.3.3", "postcss@^8.4.18", "postcss@>=8.0.9":
   "integrity" "sha512-Wi8mWhncLJm11GATDaQKobXSNEYGUHeQLiQqDFG1qQ5UTDPTEvKw0Xt5NsTpktGTwLps3ByrWsBrG0rB8YQ9oA=="
   "resolved" "https://registry.npmjs.org/postcss/-/postcss-8.4.18.tgz"
   "version" "8.4.18"
@@ -1257,10 +1257,10 @@
   "resolved" "https://registry.npmjs.org/svelte/-/svelte-3.52.0.tgz"
   "version" "3.52.0"
 
-"tailwindcss@^3.2.1", "tailwindcss@>=3.0.0 || insiders":
-  "integrity" "sha512-Uw+GVSxp5CM48krnjHObqoOwlCt5Qo6nw1jlCRwfGy68dSYb/LwS9ZFidYGRiM+w6rMawkZiu1mEMAsHYAfoLg=="
-  "resolved" "https://registry.npmjs.org/tailwindcss/-/tailwindcss-3.2.1.tgz"
-  "version" "3.2.1"
+"tailwindcss@^3.2.2", "tailwindcss@>=3.0.0 || insiders":
+  "integrity" "sha512-c2GtSdqg+harR4QeoTmex0Ngfg8IIHNeLQH5yr2B9uZbZR1Xt1rYbjWOWTcj3YLTZhrmZnPowoQDbSRFyZHQ5Q=="
+  "resolved" "https://registry.npmjs.org/tailwindcss/-/tailwindcss-3.2.2.tgz"
+  "version" "3.2.2"
   dependencies:
     "arg" "^5.0.2"
     "chokidar" "^3.5.3"
@@ -1276,7 +1276,7 @@
     "normalize-path" "^3.0.0"
     "object-hash" "^3.0.0"
     "picocolors" "^1.0.0"
-    "postcss" "^8.4.17"
+    "postcss" "^8.4.18"
     "postcss-import" "^14.1.0"
     "postcss-js" "^4.0.0"
     "postcss-load-config" "^3.1.4"
@@ -1358,10 +1358,10 @@
     "@types/unist" "^2.0.0"
     "unist-util-stringify-position" "^2.0.0"
 
-"vite@^3.0.0", "vite@^3.1.0", "vite@^3.2.1":
-  "integrity" "sha512-ADtMkfHuWq4tskJsri2n2FZkORO8ZyhI+zIz7zTrDAgDEtct1jdxOg3YsZBfHhKjmMoWLOSCr+64qrEDGo/DbQ=="
-  "resolved" "https://registry.npmjs.org/vite/-/vite-3.2.1.tgz"
-  "version" "3.2.1"
+"vite@^3.0.0", "vite@^3.1.0", "vite@^3.2.3":
+  "integrity" "sha512-h8jl1TZ76eGs3o2dIBSsvXDLb1m/Ec1iej8ZMdz+PsaFUsftZeWe2CZOI3qogEsMNaywc17gu0q6cQDzh/weCQ=="
+  "resolved" "https://registry.npmjs.org/vite/-/vite-3.2.3.tgz"
+  "version" "3.2.3"
   dependencies:
     "esbuild" "^0.15.9"
     "postcss" "^8.4.18"
