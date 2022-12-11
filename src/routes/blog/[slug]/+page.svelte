@@ -13,7 +13,12 @@
     })}
   </p>
   <h1>{title}</h1>
-  <Content />
+  <div
+    class="first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-gray-700 dark:first-letter:text-gray-300
+  first-letter:mr-3 first-letter:float-left"
+  >
+    <Content />
+  </div>
 </article>
 
 {#if categories.length}
